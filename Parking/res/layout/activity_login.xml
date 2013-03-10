@@ -1,14 +1,69 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity" >
+    android:gravity="center"
+    android:orientation="vertical" 
+    android:background="@drawable/bg">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
+    <EditText
+        android:id="@+id/etusername"
+		android:textColor="#cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+		android:background="#88000000"        
+        android:shadowColor="@android:color/darker_gray"
+        android:ems="10"
+        android:textCursorDrawable="@null"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress">
+        <requestFocus />
+    </EditText>
+    
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+		android:textColor="#cccccc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="45dp"
+		android:background="#88000000"        
+        android:shadowColor="@android:color/darker_gray"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:ems="10"
+		android:textCursorDrawable="@null"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <Button
+        android:id="@+id/blogin"
+		android:textColor="#cccccc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+		android:background="#88000000"        
+        android:padding="3dp"
+        android:text="@string/Login" />
+    
+    <Button
+        android:id="@+id/bnewuser"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+		android:textColor="#cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:padding="3dp"
+        android:background="#88000000"
+        android:text="@string/newuser" />
+
+</LinearLayout>
